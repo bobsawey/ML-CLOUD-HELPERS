@@ -3,11 +3,13 @@
 ## Goals:
 
 ### Assist in packaging processed data, pushing, and pulling
-*Nice to have: install deps automagically*
+Nice to Haves before Need to Haves
+#### Nice to haves: install deps automagically*
 
 ```bash
+PACKAGE_ONE=$1
 PKG_OK=$(dpkg-query -W --showformat='${Status}\n' the.package.name|grep "install ok installed")
-echo Checking for somelib: $PKG_OK
+echo Checking for $1: $PKG_OK
 if [ "" == "$PKG_OK" ]; then
   echo "No somelib. Setting up somelib."
   sudo apt-get --force-yes --yes install the.package.name
