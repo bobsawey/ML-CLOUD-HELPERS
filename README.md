@@ -5,7 +5,7 @@
 ### Assist in packaging processed data, pushing, and pulling
 Nice to Haves before Need to Haves
 #### Nice to haves: 
-
+##### installs as a command toolset with !pip
 ##### install deps automagically 🤖
 
 
