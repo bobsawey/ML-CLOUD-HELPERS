@@ -8,6 +8,7 @@ Nice to Haves before Need to Haves
 
 ##### install deps automagically 🤖
 
+
 ```bash
 PACKAGE_ONE=$1
 PKG_OK=$(dpkg-query -W --showformat='${Status}\n' $1|grep "install ok installed")
@@ -28,11 +29,22 @@ def import_or_install(package):
 ```
 #### Pulling
 
+++--
 Goal: 
 1. collect files with a handle like collect.sh files*.jpg
+    ```bash
+    #collect.sh
+    TOPACKAGE=$1
+    ```
 2. get a files.tar.xz file
+    ```bash
+    tar -cf - data_dir/ | xz -9e --threads=8 -c - > tarfile.tar.xz
+    ```
 3. type download files.tar.xz and files.download('files.tar.xz') downloads 
 
+```bash
+python3 download.py sys.argv[1]
+```
 ```bash
 %run -i compress.py files_regex 
 ```
@@ -46,6 +58,7 @@ files = sys.argv[1]
 os.system("tar -cf - data_dir/ | xz -9e --threads=8 -c - > tarfile.tar.xz
 
 files.download('example.txt')  
+
 ```
 #### Pushing
 * %run -i download.py .
