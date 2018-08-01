@@ -26,7 +26,33 @@ def import_or_install(package):
     except ImportError:
         pip.main(['install', package])    
 ```
+#### Pulling
 
+Goal: 
+1 collect files with a handle like collect.sh files*.jpg
+2 get a files.tar.xz file
+3 type download files.tar.xz and files.download('files.tar.xz') downloads 
+
+```bash
+%run -i compress.py files_regex 
+```
+DUNNO
+```Python
+import os
+from subprocess import call
+from google.colab import files
+files = sys.argv[1]
+
+os.system("tar -cf - data_dir/ | xz -9e --threads=8 -c - > tarfile.tar.xz
+
+files.download('example.txt')  
+```
+#### Pushing
+* %run -i download.py .
+  * download.py .
+  * for filename in sys...(argv[1])
+    * do 
+  
 #### Processing
 * png_to_jpg.sh
 * jpg_to_png.sh data_in_dir data_out_dir
