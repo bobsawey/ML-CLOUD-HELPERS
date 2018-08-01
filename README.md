@@ -29,9 +29,9 @@ def import_or_install(package):
 #### Pulling
 
 Goal: 
-1 collect files with a handle like collect.sh files*.jpg
-2 get a files.tar.xz file
-3 type download files.tar.xz and files.download('files.tar.xz') downloads 
+1. collect files with a handle like collect.sh files*.jpg
+2. get a files.tar.xz file
+3. type download files.tar.xz and files.download('files.tar.xz') downloads 
 
 ```bash
 %run -i compress.py files_regex 
