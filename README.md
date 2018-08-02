@@ -27,9 +27,17 @@ def import_or_install(package):
     except ImportError:
         pip.main(['install', package])    
 ```
-#### Pulling
+
+#### Two Way
+
 ##### Goal: Easy Auth with Google for Pushing and Pulling.
 **Using Gist from https://gist.github.com/rdinse/159f5d77f13d03e0183cb8f7154b170a , thank u [@rdinse](https://github.com/rdinse)!**
+
+Put Gist into start ipynb
+
+
+#### Pulling
+
 
 #### Packaging
 Goal: 
@@ -50,6 +58,18 @@ python3 download.py sys.argv[1]
 ```bash
 %run -i compress.py files_regex 
 ```
+```bash
+!kuu compress *.jpg
+#outputs: [unique].txz
+```
+```Python
+import uuid
+
+def generate_filename(ext="txz"):
+  return f"{uuid.uuid4()}".txz
+
+```
+
 DUNNO
 ```Python
 import os
