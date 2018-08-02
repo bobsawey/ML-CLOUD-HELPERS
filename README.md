@@ -55,6 +55,17 @@ Goal:
 ```bash
 python3 download.py sys.argv[1]
 ```
+```python
+#decompress.py
+#$ decompress filename.txz
+import os
+import sys
+import uuid
+
+#process args
+def untarxz(filename=sys.argv[1]):
+  os.system(f"tar -xvJf{filename}")
+```
 ```bash
 %run -i compress.py files_regex 
 ```
