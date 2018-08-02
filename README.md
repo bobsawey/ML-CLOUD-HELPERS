@@ -31,6 +31,7 @@ def import_or_install(package):
 ##### Goal: Easy Auth with Google for Pushing and Pulling.
 **Using Gist from https://gist.github.com/rdinse/159f5d77f13d03e0183cb8f7154b170a , thank u [@rdinse](https://github.com/rdinse)!**
 
+#### Packaging
 Goal: 
 1. collect files with a handle like collect.sh files*.jpg
     ```bash
