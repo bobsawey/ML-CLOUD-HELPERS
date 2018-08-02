@@ -66,7 +66,7 @@ python3 download.py sys.argv[1]
 import uuid
 
 def generate_filename(ext="txz"):
-  return f"{uuid.uuid4()}".txz
+  return f"{uuid.uuid4()}.txz"
 
 ```
 
