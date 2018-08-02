@@ -1,4 +1,4 @@
-# ML-CLOUD-HELPERS
+# ml-cloud-helpers
 
 ## Goals:
 
